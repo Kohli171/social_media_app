@@ -1,0 +1,13 @@
+{{#*inline "title"}}Edit Lookup Table{{/inline}}
+
+<h2>Edit Lookup Table</h2>
+<form action="/admin/lookup" method="POST">
+  <label for="entry">Entry:</label>
+  <input type="text" id="entry" name="entry" required>
+  <button type="submit">Save</button>
+</form>
+<ul>
+  {{#each entries}}
+  <li>{{this}} <a href="/admin/lookup/delete/{{this}}">Delete</a></li>
+  {{/each}}
+</ul>

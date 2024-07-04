@@ -1,0 +1,13 @@
+{{#*inline "title"}}Contact Us{{/inline}}
+
+<h2>Contact Us</h2>
+<p>We'd love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Reach out to us using the form below or through any of the provided contact details.</p>
+<form action="/contact" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>

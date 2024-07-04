@@ -1,0 +1,8 @@
+{{#*inline "title"}}My Orders{{/inline}}
+
+<h2>My Orders</h2>
+<ul>
+  {{#each orders}}
+  <li>Order #{{this.orderNumber}} - {{this.status}}</li>
+  {{/each}}
+</ul>
